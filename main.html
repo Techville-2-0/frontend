@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/img/favicon.jpg" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="./Assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <title>TechVille Technologies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .navbar-brand {
+            margin-right: auto;
+            /* Push the logo to the left */
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- The navbar -->
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
+                <div class="container">
+                    <div class="d-flex align-items-center">
+                        <img style="width: 30px;" class="rounded-circle" src="./assets/img/Logo.jpg" alt="">
+                        <a class="navbar-brand" style="font-size: 26px;" href="#">
+                            <span class="fw-bolder">Techville</span><span style="color: #22CFB8;"
+                                class="fw-bolder text-warning">Technologies</span>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav fw-bolder">
+                            <li class="nav-item">
+                                <a class="nav-link navClick text-warning" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navClick" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navClick" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navClick" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navClick" href="#partnership">Partnerships</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link navClick" href="#">Training and Programs</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link navClick" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- <button style="background-color: #22CFB8;" class="text-white btn fw-bolder ms-3">Login</button> -->
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- Front page -->
+        <section>
+            <Container class="d-flex flex-column position-relative">
+                <img class="img-fluid" src="./assets/img/frontpage.jpg" alt="" srcset="">
+                <Container class="position-absolute abso">
+                    <p style="font-size: 3vw;" class=""><span class="fs-3">Unlocking</span> <br> <span
+                            class="text-warning fw-bolder">Innovation</span> <span class="fs-2">through</span> <br>
+                        Expert Software <br> Solutions</p>
+                    <p style="font-size: 2vw;">At TechVille, we blend cutting-edge technology with creative <br>
+                        solutions to bring ideas to life</p>
+                    <button style="background-color: #22CFB8;" class="bg-warning fs-6 fw-bolder btn text-white">Explore
+                        our services</button>
+                </Container>
+            </Container>
+        </section>
+
+        <!-- About us -->
+        <section id="about">
+            <Container class="m-5">
+                <h5 class="mx-4 text-warning mt-3">About us</h5>
+                <h1 class="mx-4 mb-5">Who we are</h1>
+            </Container>
+            <Container class="d-flex flex-row  flex-md-colum justify-content-center">
+                <img src="./assets/img/tech.jpg" class="d-none d-md-block w-25 mx-3 img-fitting-1" alt="" srcset="">
+
+                <Container>
+                    <p>
+                        We are a dynamic and forward-thinking software development <br> company dedicated to
+                        transforming
+                        ideas
+                        into cutting-edge <br> solutions. With a passion for technology and a commitment to <br>
+                        excellence,
+                        we
+                        empower businesses to thrive in the digital era.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-content-center">
+                            <box-icon name='right-arrow-circle'></box-icon>
+                            <span>We are a dynamic and forward-thinking software development</span>
+                        </li>
+                        <li class="d-flex align-content-center">
+                            <box-icon name='right-arrow-circle'></box-icon>
+                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </span>
+                        </li>
+                        <li class="d-flex align-content-center">
+                            <box-icon name='right-arrow-circle'></box-icon>
+                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit!</span>
+                        </li>
+                        <li class="d-flex align-content-center">
+                            <box-icon name='right-arrow-circle'></box-icon>
+                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </span>
+                        </li>
+                    </ul>
+                </Container>
+            </Container>
+        </section>
+
+    <!-- Results -->
+    <section>
+        <div class="container mt-5 my-5">
+            <div class="d-flex flex-column flex-md-row justify-content-around align-items-center">
+                <div class="m-2 d-flex flex-column px-3 align-items-center bg-warning rounded-3 w-100 w-md-25">
+                    <div class="mt-4">
+                        <h1 class="text-center">30+</h1>
+                        <p class="text-center">Projects completed</p>
+                    </div>
+                </div>
+                <div class="m-2 d-flex flex-column px-3 align-items-center bg-warning rounded-3 w-100 w-md-25">
+                    <div class="mt-4">
+                        <h1 class="text-center">20+</h1>
+                        <p class="text-center">Clients</p>
+                    </div>
+                </div>
+                <div class="m-2 d-flex flex-column px-3 align-items-center bg-warning rounded-3 w-100 w-md-25">
+                    <div class="mt-4">
+                        <h1 class="text-center">10+</h1>
+                        <p class="text-center">Experts</p>
+                    </div>
+                </div>
+                <div class="m-2 d-flex flex-column px-3 align-items-center bg-warning rounded-3 w-100 w-md-25">
+                    <div class="mt-4">
+                        <h1 class="text-center">4</h1>
+                        <p class="text-center">Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What we offer -->
+    <section id="services" class="secspace">
+        <Container class="m-5">
+            <h5 class="mx-4 text-warning">Services</h5>
+            <h1 class="mx-4 ">What we offer</h1>
+        </Container>
+        <Container class="d-flex flex-column flex-md-row justify-content-around">
+            <Container class="">
+                <Container class="d-flex flex-column align-content-center align-items-center">
+                    <box-icon class="text-center" name='cog'></box-icon>
+                    <h3 class="text-warning">Product development</h3>
+                    <p class="text-center">We create tailored solutions that align <br> perfectly with your objectives,
+                        providing a <br> competitive edge.</p>
+                </Container>
+                <Container class="d-flex flex-column align-content-center align-items-center">
+                    <box-icon class="text-center my-icon" name='sketch' type='logo'></box-icon>
+                    <h3 class="text-warning">UI/UX Design</h3>
+                    <p class="text-center">Our UI/UX design services focus on <br> creating visually stunning and
+                        intuitive interfaces. </p>
+                </Container>
+                <Container class="d-flex flex-column align-content-center align-items-center">
+                    <box-icon class="text-warning" name='business' type='solid'></box-icon>
+                    <h3 class="text-warning">OPB</h3>
+                    <p class="text-center">Optimize your business processes and <br> enhance efficiency with our <br>
+                        Business process outsourcing services.</p>
+                </Container>
+
+            </Container>
+            <Container>
+                <Container class="d-flex flex-column align-content-center align-items-center">
+                    <box-icon class="text-center" name='world'></box-icon>
+                    <h3 class="text-warning">Web development</h3>
+                    <p class="text-center">Crafting responsive web applications, we <br> leverage the latest
+                        technologies to <br> enhance user experience.</p>
+                </Container>
+                <Container class="d-flex flex-column align-content-center align-items-center">
+                    <box-icon class="text-center" name='check-square'></box-icon>
+                    <h3 class="text-warning">Testing</h3>
+                    <p class="text-center">Ensuring the reliability and performance <br> of your software is paramount.
+                    </p>
+                </Container>
+                <Container class="d-flex flex-column align-content-center align-items-center">
+                    <box-icon class="text-center" name='key' type='solid'></box-icon>
+                    <h3 class="text-warning">Network & security</h3>
+                    <p class="text-center">Build a robust and secure network <br> infrastructure with our Networking &
+                        Security services.</p>
+                </Container>
+            </Container>
+            <Container>
+                <Container class="d-flex flex-column align-content-center align-items-center">
+                    <box-icon class="text-center" name='mobile'></box-icon>
+                    <h3 class="text-warning">Mobile App development</h3>
+                    <p class="text-center">We specialize in creating native <br> and cross-platform applications that
+                        cater <br> to diverse audiences.</p>
+                </Container>
+                <Container class="d-flex flex-column align-content-center align-items-center">
+                    <box-icon class="text-center" name='laptop'></box-icon>
+                    <h3 class="text-warning">IT consulting</h3>
+                    <p class="text-center"> We guide you in adopting the right <br> technologies and strategies to fuel
+                        <br> your digital transformation journey.
+                    </p>
+                </Container>
+                <Container class="d-flex flex-column align-content-center align-items-center">
+                    <box-icon class="text-center" name='server'></box-icon>
+                    <h3 class="text-warning">Support & Maintenance</h3>
+                    <p class="text-center"> We provide ongoing support and <br> maintenance services, ensuring that your
+                        <br> software remains up-to-date, secure, and <br> efficient.
+                    </p>
+                </Container>
+            </Container>
+        </Container>
+
+        <!-- Testimonies -->
+        <section id="testimony" class="secspace">
+            <Container class="">
+                <h5 class="text-warning mx-5">Testimony</h5>
+                <h1 class="mx-5">What people says about TechVille Technologies</h1>
+            </Container>
+            <div class="d-flex align-items-center splide px-5">
+                <div class="splide__track">
+                    <ul class=" splide__list">
+                        <li class="splide__slide p-3">
+                            <div class="card p-3 border-0 shadow rounded-5" style="width: 25rem; max-height: 350px;">
+                                <Container class="d-flex flex-row">
+                                    <img style="width: 6rem;" src="./assets/img/person1.jpeg" class="card-img-top"
+                                        alt="...">
+                                    <div class="mx-2 pt-5">
+                                        <h6>Mihir Rajesh Panchal</h6>
+                                        <p style="font-size: 0.8rem;">CodeClause Intern</p>
+                                    </div>
+                                </Container>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        "I thoroughly enjoyed my internship this summer and now have very valuable
+                                        experience
+                                        under my belt. I know this will help when looking for jobs and needing
+                                        references. I
+                                        was dreading it in the beginning, but now I am so happy it was required." </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide p-3">
+                            <div class="card p-3 border-0 shadow rounded-5" style="width: 25rem; max-height: 350px">
+                                <Container class="d-flex flex-row">
+                                    <img style="width: 6rem;" src="./assets/img/person2.jpeg" class="card-img-top"
+                                        alt="...">
+                                    <div class="mx-2 pt-5">
+                                        <h6>Ajit Sachin Patil</h6>
+                                        <p style="font-size: 0.8rem;" class="">CodeClause Intern</p>
+                                    </div>
+                                </Container>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        "I thoroughly enjoyed my internship this summer and now have very valuable
+                                        experience
+                                        under my belt. I know this will help when looking for jobs and needing
+                                        references. I
+                                        was dreading it in the beginning, but now I am so happy it was required." </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide p-3">
+                            <div class="card p-3 border-0 shadow rounded-5" style="width: 25rem; max-height: 350px">
+                                <Container class="d-flex flex-row">
+                                    <img style="width: 6rem;" src="./assets/img/person3.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="mx-2 pt-5">
+                                        <h6>Samiksha Madhukar Rodke</h6>
+                                        <p style="font-size: 0.8rem;">CodeClause Intern</p>
+                                    </div>
+                                </Container>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        "I thoroughly enjoyed my internship this summer and now have very valuable
+                                        experience
+                                        under my belt. I know this will help when looking for jobs and needing
+                                        references. I
+                                        was dreading it in the beginning, but now I am so happy it was required." </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide p-3">
+                            <div class="card p-3 border-0 shadow rounded-5" style="width: 25rem; max-height: 350px">
+                                <Container class="d-flex flex-row">
+                                    <img style="width: 6rem;" src="./assets/img/person4.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="mx-2 pt-5">
+                                        <h6>Isha Paul</h6>
+                                        <p style="font-size: 0.8rem;">CodeClause Intern</p>
+                                    </div>
+                                </Container>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        "I thoroughly enjoyed my internship this summer and now have very valuable
+                                        experience
+                                        under my belt. I know this will help when looking for jobs and needing
+                                        references. I
+                                        was dreading it in the beginning, but now I am so happy it was required." </p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="secspace">
+            <Container>
+                <h5 class="text-warning mx-5">Portfolio</h5>
+                <h1 class="mx-5 mb-4">Our works</h1>
+            </Container>
+            <!-- Filtering buttons -->
+            <Container class="d-flex justify-content-center filter_btns ms-3 text-center" style="gap: 20px;">
+                <button class="active text-white border rounded-5 p-2">Show all</button>
+                <button class="border rounded-5 p-2" data-name="web dev">Web dev</button>
+                <button class="border rounded-5 p-2" data-name="mobile">Mobile</button>
+                <button class="border rounded-5 p-2" data-name="wordpress">Wordpress</button>
+            </Container>
+    
+            <!-- Cards -->
+            <Container class="d-flex flex-wrap filterable_cards justify-content-around mt-4 mx-4">
+                <div class="card border border-2 border-warning mb-4" data-name="web dev" style="width: 25rem;">
+                    <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="height: 200px;">
+                                <img src="./assets/img/portfolio/Landing page/Landing page 1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" style="height: 200px;">
+                                <img src="./assets/img/portfolio/Landing page/Landing page 2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" style="height: 200px;">
+                                <img src="./assets/img/portfolio/Dashboard/Dashboard 2.png" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Web Application</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-warning">View Project</a>
+                    </div>
+                </div>
+                <div class="card border border-2 border-warning mb-4" data-name="wordpress" style="width: 25rem;">
+                    <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="height: 200px;">
+                                <img src="./assets/img/portfolio/Netflix/Netflix 1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" style="height: 200px;">
+                                <img src="./assets/img/portfolio/Netflix/Netflix 2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" style="height: 200px;">
+                                <img src="./assets/img/portfolio/Netflix/Netflix 3.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Wordpress project</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-warning">View Project</a>
+                    </div>
+                </div>
+                <div class="card border border-2 border-warning mb-4" data-name="mobile" style="width: 25rem;">
+                    <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="height: 200px;">
+                                <img src="../assets/img/Ashuwa .gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" style="height: 200px;">
+                                <img src="../assets/img/Cooperative_Bank_of_Oromia-3.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" style="height: 200px;">
+                                <img src="../assets/img/frontpage.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile Application</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-warning">View Project</a>
+                    </div>
+                </div>
+                <div class="card border border-2 border-warning mb-4" data-name="web dev" style="width: 25rem;">
+                    <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="height: 200px;">
+                                <img src="./assets/img/portfolio/Social media/Social media 2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" style="height: 200px;">
+                                <img src="./assets/img/portfolio/Social media/Social media 3.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" style="height: 200px;">
+                                <img src="./assets/img/portfolio/Social media/Social media 4.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Web Application</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-warning">View Project</a>
+                    </div>
+                </div>
+                <div class="card border border-2 border-warning mb-4" data-name="mobile" style="width: 25rem;">
+                    <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="height: 200px;">
+                                <img src="./assets/img/portfolio/project-3/1.png" class="d-block w-100 fitting" alt="...">
+                            </div>
+                            <div class="carousel-item" style="height: 200px;">
+                                <img src="./assets/img/portfolio/project-3/2.png" class="d-block w-100"  alt="...">
+                            </div>
+                            <div class="carousel-item" style="height: 200px;">
+                                <img src="./assets/img/portfolio/project-3/3.png" class="d-block w-100 " alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile Application</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-warning">View Project</a>
+                    </div>
+                </div>
+                <div class="card mb-4 border-2 border-warning" data-name="wordpress" style="width: 25rem;">
+                    <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="height: 200px;">
+                                <img src="https://via.placeholder.com/300" class="d-block fitting w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" style="height: 200px;">
+                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" style="height: 200px;">
+                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Wordpress project</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-warning">View Project</a>
+                    </div>
+                </div>
+            </Container>
+        </section>
+
+        <!-- Partnership -->
+        <section id="partnership" class="secspace">
+            <Container class="d-flex justify-content-center flex-wrap">
+                <Container class="me-5">
+                    <h5 class="text-warning">Partnerships</h5>
+                    <h1 class="">They trust us</h1>
+                    <p class="">Explore the companies that trust and <br> collaborate with TechVille Technologies for mutual success.                    </p>
+                </Container>
+                <Container class="d-flex flex-row justify-content-between align-content-center" style="gap: 20px;">
+                    <img class="img-fitting" src="./assets/img/etb.png" style="width: 100px;" alt="" srcset="">
+                    <img class="img-fitting" src="./assets/img/Dashen_Bank.png" style="width: 100px;" alt="" srcset="">
+                    <img class="img-fitting" src="./assets/img/Cooperative_Bank_of_Oromia-3.png" style="width: 100px;" alt="" srcset="">
+                    <img class="img-fitting" src="./assets/img/Awash_International_Bank.png" style="width: 100px;" alt="" srcset="">
+                    <img class="img-fitting" src="./assets/img/Ashuwa .gif" style="width: 100px;" alt="" srcset="">
+                </Container>
+            </Container>
+        </section>
+
+        <!-- Contact us -->
+        <section class="secspace">
+            <Container class="d-flex flex-column justify-content-center align-content-center mt-5">
+              <h5 class="text-center ">Ready to turn your ideas into reality?</h5>
+              <h2 class="text-center mb-5" style="font-size: 3em;">Reach out to us for innovative solutions <br> tailored to your needs.</h2>
+              <h5 class="text-center mb-5">Whether you have a specific project in mind or just want to explore <br> the possibilities, our team is ready to assist you.</h5>
+            </Container>
+            <Container class="d-flex justify-content-center mb-5">
+                <button class="border text-center rounded-5 p-2 text-warning border-warning bg-white fw-bolder fs-3" style="width: 10em; border-color: #ffc107;">
+                    <a class="text-decoration-none text-warning" href="./contact.html">Contact us</a>
+                </button>
+            </Container>
+          </section>
+          
+
+        <!-- Before footer -->
+        <section style="margin-top: 300px;">
+            <Container class="d-flex flex-column flex-md-row justify-content-around bg-warning-subtle p-2 text-dark">
+                <Container>
+                    <h6>+251 112 23 63 04 / 05</h6>
+                </Container>
+                <Container>
+                    <h6>info@techville.com</h6>
+                </Container>
+                <Container>
+                    <h6>info@Address Addis Ababa / Ethiopia</h6>
+                </Container>
+            </Container>
+        </section>
+
+        <!-- Footer -->
+        <section>
+            <Container
+                class="d-flex flex-column flex-md-row justify-content-between px-3 p-4 bg-warning text-dark align-items-center">
+                <Container class="d-flex flex-column align-items-center align-items-md-start">
+                    <h6>TeckVille Technologies</h6>
+                </Container>
+                <Container>
+                    <h6>© 2024 TechVille PLC</h6>
+                </Container>
+                <Container class="d-flex justify-content-betwee align-content-center">
+                    <a href=""><i class="text-dark fa-brands fa-whatsapp mx-1 fs-2"></i></a>
+                    <a href=""><i class="text-dark fa-brands fa-facebook mx-1 fs-2"></i></a>
+                    <a href=""><i class="text-dark fa-brands fa-instagram mx-1 fs-2"></i></a>
+                    <a href=""><i class="text-dark fa-brands fa-linkedin mx-1 fs-2"></i></a>
+                </Container>
+            </Container>
+        </section>
+        <!-- Go to top -->
+        <div id="arrow-down" class="arrow-down">
+            <a href="#"><i class="fa-solid fa-arrow-up rounded-3 text-white"></i></a>
+        </div>
+        <div class=""></div>
+    </section>
+
+    <!-- Javascript codes -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="./isotope/isotope.pkgd.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        const btns = document.querySelectorAll('.filter_btns button')
+        const cards = document.querySelectorAll('.card')
+
+        btns.forEach(li => {
+           li.onclick = function() {
+            //active
+            btns.forEach(li => {
+                li.className = "";
+            })
+            li.className = "active";
+
+            //Filter
+            const value = li.textContent;
+            cards.forEach(img => {
+                img.style.display = 'none';
+                if (img.getAttribute('data-name') == value.toLowerCase() || value == "Show all") {
+                    img.style.display = 'block';
+                }
+            })
+           }
+        });
+    </script>
+</body>
+</html>

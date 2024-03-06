@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Techville Dashboard</title>
+</head>
+
+<body>
+    <section>
+        <Container
+            class="d-flex flex-row justify-content-between fixed-top bg-light px-5 border border-2 border-bottom">
+            <Container class="d-flex flex-row text-center">
+                <Container>
+                    <i class="mycursor m-2 p-3 fa-solid fa-bars d-block d-md-none" id="togglingbtn"></i>
+                </Container>
+                <img src="../assets/img/Logo.jpg" style="width: 50px;" alt="">
+                <p class="text-center mt-3 mx-3">TechVilleTechnologies</p>
+            </Container>
+            <Container class="d-flex flex-row mt-3 justify-content-around" style="gap: 1em;">
+                <p class="mycursor border- border-end"><i class="border-end fa-solid fa-bell"></i></p>
+                <p class="vl"></p>
+                <p class="mycursor">Admin</p>
+                <a href="./login.html" onclick="window.location.href = this.href;" id="logoutLink">Logout</a>
+            </Container>
+        </Container>
+    </section>
+
+
+    <section>
+        <div class="side-menu bg-light border d-none d-md-block" id="side-menu">
+            <Container>
+                <h6>Sections</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#abt"><i class="fa-regular fa-address-card"></i> About
+                            us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-dark" href="#portfolio"><i class="fa-solid fa-list"></i> Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-dark" href="#testimony">
+                            <i class="fa-solid fa-people-arrows"></i>
+                            Testimonials
+                        </a>
+                    </li>
+                </ul>
+            </Container>
+            <Container>
+                <h6>Category 2</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-dark" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-dark" href="#">Testimonials</a>
+                    </li>
+                </ul>
+            </Container>
+        </div>
+    </section>
+
+    <section class="content">
+        <div style="margin-top: 100px;" id="now">
+            <h1 id="abt">About us</h1>
+            <div id="abto" class="container p-3">
+                <table class="table" style="width: 400px;">
+                    <thead>
+                        <tr>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Content</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Projects completed</td>
+                            <td>40+</td>
+                            <td><button class="btn btn-primary" onclick="editRow(1)">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>Clients</td>
+                            <td>30+</td>
+                            <td><button class="btn btn-primary" onclick="editRow(2)">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>Experts</td>
+                            <td>10+</td>
+                            <td><button class="btn btn-primary" onclick="editRow(3)">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>Awards</td>
+                            <td>4</td>
+                            <td><button class="btn btn-primary" onclick="editRow(4)">Edit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Modal to edit about us-->
+        <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editModalLabel">Edit Row</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Form fields for editing -->
+                        <div class="form-group">
+                            <label for="editHeading">Heading:</label>
+                            <input type="text" id="editHeading" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="editContent">Content:</label>
+                            <input type="text" id="editContent" class="form-control">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="saveChanges()">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!--For portfolio -->
+        <div>
+            <h1 id="portfolio">Portfolio</h1>
+            <div class="container p-3">
+                <div class="d-flex justify-content-start mb-3">
+                    <div class="d-flex mb-3">
+                        <!-- <label for="titleFilter" class="form-label">Title Filter</label> -->
+                        <input type="text" class="form-control" id="titleFilter" placeholder="Filter by title">
+                    </div>
+                    <div>
+                        <button id="addPortfolioBtn" class="btn btn-warning rounded">+ Add portfolio</button>
+                    </div>
+                </div>
+                <table id="portfolioTable" class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Image 1</th>
+                            <th scope="col">Image 2</th>
+                            <th scope="col">Image 3</th>
+                            <th scope="col">URL link</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ecommerce</td>
+                            <td>Web dev</td>
+                            <td>location</td>
+                            <td>location</td>
+                            <td>location</td>
+                            <td>location</td>
+                            <td>https:/-</td>
+                            <td>
+                                <button class="btn btn-primary edit-btn" data-bs-toggle="modal" data-bs-target="#editPortfolioModal"><i class="fas fa-pen"></i> Edit</button>
+                                <button class="btn btn-danger delete-btn mx-1"><i class="fas fa-trash"></i> Delete</button>
+                            </td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                        <tr>
+                            <td>Digital company</td>
+                            <td>Mobile app</td>
+                            <td>App for tech company</td>
+                            <td>location</td>
+                            <td>location</td>
+                            <td>location</td>
+                            <td>https:/-</td>
+                            <td>
+                                <button class="btn btn-primary edit-btn" data-bs-toggle="modal" data-bs-target="#editPortfolioModal"><i class="fas fa-pen"></i> Edit</button>
+                                <button class="btn btn-danger delete-btn mx-1"><i class="fas fa-trash"></i> Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Shopping</td>
+                            <td>Wordpress</td>
+                            <td>Web for TechVille electronics shop</td>
+                            <td>location</td>
+                            <td>location</td>
+                            <td>location</td>
+                            <td>https:/-</td>
+                            <td>
+                                <button class="btn btn-primary edit-btn" data-bs-toggle="modal" data-bs-target="#editPortfolioModal"><i class="fas fa-pen"></i> Edit</button>
+                                <button class="btn btn-danger delete-btn mx-1"><i class="fas fa-trash"></i> Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Modal for adding new portfolio -->
+        <div class="modal fade" id="addPortfolioModal" tabindex="-1" role="dialog" aria-labelledby="addPortfolioModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addPortfolioModalLabel">Add Portfolio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Form for adding a new portfolio -->
+                        <form id="addPortfolioForm">
+                            <div class="mb-3">
+                                <label for="portfolioTitle" class="form-label">Title</label>
+                                <input type="text" class="form-control" id="portfolioTitle" placeholder="Enter title">
+                            </div>
+                            <div class="mb-3">
+                                <label for="portfolioCategory" class="form-label">Category</label>
+                                <input type="text" class="form-control" id="portfolioCategory" placeholder="Enter category">
+                            </div>
+                            <div class="mb-3">
+                                <label for="portfolioDescription" class="form-label">Description</label>
+                                <textarea class="form-control" id="portfolioDescription" rows="3" placeholder="Enter description"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="image1" class="form-label">Image 1 URL</label>
+                                <input type="text" class="form-control" id="image1" placeholder="Enter image URL">
+                            </div>
+                            <div class="mb-3">
+                                <label for="image2" class="form-label">Image 2 URL</label>
+                                <input type="text" class="form-control" id="image2" placeholder="Enter image URL">
+                            </div>
+                            <div class="mb-3">
+                                <label for="image3" class="form-label">Image 3 URL</label>
+                                <input type="text" class="form-control" id="image3" placeholder="Enter image URL">
+                            </div>
+                            <div class="mb-3">
+                                <label for="portfolioUrl" class="form-label">Portfolio URL</label>
+                                <input type="text" class="form-control" id="portfolioUrl" placeholder="Enter portfolio URL">
+                            </div>
+                            <!-- You can add more fields as needed -->
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="savePortfolioBtn">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal for editing existing portfolio -->
+        <div class="modal fade" id="editPortfolioModal" tabindex="-1" role="dialog" aria-labelledby="editPortfolioModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editPortfolioModalLabel">Edit Portfolio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Form for editing an existing portfolio -->
+                        <form id="editPortfolioForm">
+                            <div class="mb-3">
+                                <label for="editPortfolioTitle" class="form-label">Title</label>
+                                <input type="text" class="form-control" id="editPortfolioTitle" placeholder="Enter title">
+                            </div>
+                            <div class="mb-3">
+                                <label for="editPortfolioCategory" class="form-label">Category</label>
+                                <input type="text" class="form-control" id="editPortfolioCategory" placeholder="Enter category">
+                            </div>
+                            <div class="mb-3">
+                                <label for="editPortfolioDescription" class="form-label">Description</label>
+                                <textarea class="form-control" id="editPortfolioDescription" rows="3" placeholder="Enter description"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="editImage1" class="form-label">Image 1 URL</label>
+                                <input type="text" class="form-control" id="editImage1" placeholder="Enter image URL">
+                            </div>
+                            <div class="mb-3">
+                                <label for="editImage2" class="form-label">Image 2 URL</label>
+                                <input type="text" class="form-control" id="editImage2" placeholder="Enter image URL">
+                            </div>
+                            <div class="mb-3">
+                                <label for="editImage3" class="form-label">Image 3 URL</label>
+                                <input type="text" class="form-control" id="editImage3" placeholder="Enter image URL">
+                            </div>
+                            <div class="mb-3">
+                                <label for="editPortfolioUrl" class="form-label">Portfolio URL</label>
+                                <input type="text" class="form-control" id="editPortfolioUrl" placeholder="Enter portfolio URL">
+                            </div>
+                            <!-- Hidden field to store the index of the row being edited -->
+                            <input type="hidden" id="editRowIndex">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="updatePortfolioBtn">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add testimony -->
+        <div>
+            <h1 id="testimony">Testimonials</h1>
+            <Container class="p-3">
+                <!-- <Container class="d-flex justify-content-en mb-3">
+                    <p class="m-2"><i class="fa-solid fa-filter"></i> Filters</p>
+                    <button class="btn-warning rounded">+Add testimony</button>
+                </Container> -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">title</th>
+                            <th scope="col">Testimony</th>
+                            <th scope="col">image 1</th>
+                            <!-- <th scope="col">URL link</th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Micheal</td>
+                            <td>Web dev</td>
+                            <td>What a dedication</td>
+                            <td>Upload</td>
+                            <!-- <td><i class="mycursor fa-solid fa-pen-to-square"></i></td> -->
+                        </tr>
+                        <tr>
+                            <td>Smith George</td>
+                            <td>Mobile app</td>
+                            <td>Best</td>
+                            <td>Upload</td>
+                            <!-- <td><i class="mycursor  fa-solid fa-pen-to-square"></i></td> -->
+                        </tr>
+                        <tr>
+                            <td>Grace </td>
+                            <td>Wordpress</td>
+                            <td>Examplary work</td>
+                            <td>Upload</td>
+                            <!-- <td><i class="mycursor fa-solid fa-pen-to-square"></i></td> -->
+                        </tr>
+                        <tr>
+                            <td>Mary</td>
+                            <td>Awards</td>
+                            <td>Wow </td>
+                            <td>Upload</td>
+                            <!-- <td><i class="mycursor fa-solid fa-pen-to-square"></i></td> -->
+                        </tr>
+                    </tbody>
+                </table>
+            </Container>
+        </div>
+    </section>
+</body>
+
+
+
+<script>
+    document.getElementById('togglingbtn').addEventListener('click', function () {
+        document.getElementById('side-menu').classList.toggle('d-none');
+    });
+</script>
+
+
+
+<!-- Modal for about us -->
+<script>
+    let rowToEdit;
+    
+    function editRow(rowNumber) {
+        // Store the row number to be edited
+        rowToEdit = rowNumber;
+        
+        // Fill modal fields with current row data for the second and third columns
+        let row = document.querySelectorAll("#now table tbody tr")[rowNumber - 1];
+        let cells = row.getElementsByTagName("td");
+        document.getElementById("editHeading").value = cells[0].textContent; // Second column
+        document.getElementById("editContent").value = cells[1].textContent; // Third column
+        
+        // Show the modal
+        $('#editModal').modal('show');
+    }
+    
+    function saveChanges() {
+        // Retrieve edited values
+        let newHeading = document.getElementById("editHeading").value;
+        let newContent = document.getElementById("editContent").value;
+        
+        // Update the table
+        let row = document.querySelectorAll("#now table tbody tr")[rowToEdit - 1];
+        let cells = row.getElementsByTagName("td");
+        cells[0].textContent = newHeading;
+        cells[1].textContent = newContent;
+        
+        // Hide the modal
+        $('#editModal').modal('hide');
+    }
+</script>
+
+
+<!-- Code for portfolio -->
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Script to handle modal opening when clicking "Add portfolio" button
+    document.getElementById('addPortfolioBtn').addEventListener('click', function () {
+        $('#addPortfolioModal').modal('show');
+    });
+
+    // Script to handle saving new portfolio
+    $('#savePortfolioBtn').click(function() {
+        // Get values from form
+        var title = $('#portfolioTitle').val();
+        var category = $('#portfolioCategory').val();
+        var description = $('#portfolioDescription').val();
+        var image1 = $('#image1').val();
+        var image2 = $('#image2').val();
+        var image3 = $('#image3').val();
+        var portfolioUrl = $('#portfolioUrl').val();
+        
+        // Create new table row
+        var newRow = '<tr>' +
+            '<td>' + title + '</td>' +
+            '<td>' + category + '</td>' +
+            '<td>' + description + '</td>' +
+            '<td>' + image1 + '</td>' +
+            '<td>' + image2 + '</td>' +
+            '<td>' + image3 + '</td>' +
+            '<td>' + portfolioUrl + '</td>' +
+            '<td>' +
+                '<button class="btn btn-primary edit-btn" data-bs-toggle="modal" data-bs-target="#editPortfolioModal"><i class="fas fa-pen"></i> Edit</button>' +
+            '<button class="btn btn-danger delete-btn mx-1"><i class="fas fa-trash"></i> Delete</button>' +
+            '</td>' +
+            '</tr>';
+        
+        // Append new row to table body
+        $('#portfolioTable tbody').append(newRow);
+        
+        // Close the modal
+        $('#addPortfolioModal').modal('hide');
+    });
+
+    // Script to handle opening the edit modal with data using event delegation
+    $('#portfolioTable').on('click', '.edit-btn', function() {
+        var rowIndex = $(this).closest('tr').index();
+        var rowData = $('#portfolioTable tbody tr').eq(rowIndex).find('td');
+        $('#editPortfolioTitle').val(rowData.eq(0).text());
+        $('#editPortfolioCategory').val(rowData.eq(1).text());
+        $('#editPortfolioDescription').val(rowData.eq(2).text());
+        $('#editImage1').val(rowData.eq(3).text());
+        $('#editImage2').val(rowData.eq(4).text());
+        $('#editImage3').val(rowData.eq(5).text());
+        $('#editPortfolioUrl').val(rowData.eq(6).text());
+        $('#editRowIndex').val(rowIndex);
+        $('#editPortfolioModal').modal('show');
+    });
+
+    // Script to handle updating existing portfolio
+    $('#updatePortfolioBtn').click(function() {
+        var rowIndex = $('#editRowIndex').val();
+        var rowData = $('#portfolioTable tbody tr').eq(rowIndex).find('td');
+        rowData.eq(0).text($('#editPortfolioTitle').val());
+        rowData.eq(1).text($('#editPortfolioCategory').val());
+        rowData.eq(2).text($('#editPortfolioDescription').val());
+        rowData.eq(3).text($('#editImage1').val());
+        rowData.eq(4).text($('#editImage2').val());
+        rowData.eq(5).text($('#editImage3').val());
+        rowData.eq(6).text($('#editPortfolioUrl').val());
+        $('#editPortfolioModal').modal('hide');
+    });
+
+    // Script to handle deleting a row
+    $(document).on('click', '.delete-btn', function() {
+        if (confirm("Are you sure you want to delete this portfolio?")) {
+            $(this).closest('tr').remove();
+        }
+    });
+
+    // Script to handle filtering
+    $('#titleFilter').on('input', function() {
+        var titleFilter = $('#titleFilter').val().toLowerCase();
+        
+        $('#portfolioTable tbody tr').each(function() {
+            var title = $(this).find('td:nth-child(1)').text().toLowerCase();
+            
+            if (title.includes(titleFilter)) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+    });
+</script>
+
+
+<!-- Loging out -->
+<script>
+    document.getElementById('logoutLink').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevents the default link behavior (redirecting to the href)
+
+        // You can add additional logic here before redirecting
+        // For example, you could display a confirmation dialog:
+        if (confirm('Are you sure you want to log out?')) {
+            window.location.href = event.target.href; // Redirect to the href of the link
+        }
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>

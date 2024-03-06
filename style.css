@@ -1,0 +1,157 @@
+.abso {
+  margin-left: 3em;
+  margin-top: 6em;
+}
+
+/* Here navClick is my custom class. */
+.navClick:hover {
+  color: #ffc107 !important;
+}
+
+.abtUs:hover {
+  background-color: #22cfb8 !important;
+}
+
+.top {
+  position: absolute;
+}
+
+/* Custom button */
+.custom-btn {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.bg-image {
+  background-image: url("./assets/img/frontpage.jpg"); /* Path to your background image */
+  background-size: cover; /* Cover the entire element */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+
+
+.grid-item {
+  width: 25%;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
+.flower {
+  background: teal;
+}
+.bird {
+  background: salmon;
+}
+.fruit {
+  background: tomato;
+}
+
+
+/* Fitting image to cover */
+.img-fitting{
+  object-fit: contain;
+}
+
+.img-fitting-1{
+  object-fit: contain;
+}
+
+/* Filtering buttons */
+#portfolio button{
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px !important;
+}
+
+#portfolio button.active{
+  background-color: #ffc107 !important;
+  color: white;
+}
+
+/* Testimony part */
+
+/* Styles for the arrow */
+.arrow-down {
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  right: 20px; /* Adjust the distance from the right as needed */
+  width: 40px;
+  height: 40px;
+  background-color:#ffc107; /* Replace with the color you want */
+  border-radius: 25%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.myimg{
+  height: 100vh;
+  background-color: rgb(49, 215, 215);
+}
+
+.myText{
+  color: #22CFB8; 
+}
+
+
+.myBg{
+  background-color: rgb(49, 215, 215);
+}
+
+.mycard {
+  border: none;
+  border-radius:0px ; 
+}
+
+.rmOutline:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: rgba(0,0,0,.125);
+}
+
+.accordion-item .accordion-header button{
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion .item{
+  border: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: grey;
+}
+
+.link:hover{
+  color: white;
+}
+
+
+/* Image fitting */
+.fitting{
+  object-fit: cover !important;
+}
+
+.hght{
+  max-height: 100px;
+}
+
+
+/* Space between sections */
+.secspace{
+  margin-top: 100px;
+}
+
+/* COntact backgrund */
+.contact-bg {
+  background-image: url('./assets/img/contact\ bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
